@@ -24,6 +24,115 @@
   }
 }
 
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -64,6 +173,9 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -100,6 +212,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+
 }
 
 abbr[title] {
@@ -328,31 +441,35 @@ button:not(:disabled),
 
 .green-button {
   padding: 10px 20px;
-  background-color: #81A969; /* Green color */
-  color: #f2e8c2;
+  background-color: #f3f2dc; /* Green color */
+  color: #81a869;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .green-button:hover {
-  background-color: #198754; /* Darker green on hover */
+  background-color: #e0e6e9; /* Darker green on hover */
 }
 .go-home-button {
   padding: 10px 20px;
-  background-color: #81A969; /* Green color */
-  color: #f2e8c2;
+  background-color: #f3f2dc; /* Green color */
+  color: #81a869;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .go-home-button:hover {
-  background-color: #198754; /* Darker green on hover */
+  background-color: #e0e6e9; /* Darker green on hover */
 }
 
 ::-moz-focus-inner {
@@ -561,7 +678,7 @@ progress {
 }
 
 footer {
-  background-color: #8ddbaa;
+  background-color: #81A969;
   color: #000;
   padding: 20px 0;
   text-align: center;
@@ -662,6 +779,7 @@ footer a:hover {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+  color: #000
 }
 
 .col {
@@ -2824,20 +2942,20 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #81A969;
-  --bs-btn-bg: #f3fadc;
+  --bs-btn-color: #f3f2dc;
+  --bs-btn-bg: #81a969;
   --bs-btn-border-color: #81A969;
   --bs-btn-hover-color: #81A969;
   --bs-btn-hover-bg: #e0e6e9;
   --bs-btn-hover-border-color: #81A969;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ffc800;
-  --bs-btn-active-border-color: #00c580;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-bg: #81a969;
+  --bs-btn-active-border-color: #81a969;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 255, 42, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-bg: #81a969;
+  --bs-btn-disabled-border-color: #81a869;
 }
 
 .btn-secondary {
@@ -7545,6 +7663,7 @@ textarea.form-control-lg {
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
+  border-radius: 50px;
 }
 
 .my-0 {
@@ -8004,6 +8123,8 @@ textarea.form-control-lg {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 
 .text-capitalize {
@@ -8081,9 +8202,18 @@ textarea.form-control-lg {
 }
 
 .text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #000 !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: justify;
+
 }
+
+.section-subheading {
+  margin-bottom: 50px; /* Adjust as needed */
+}
+
 
 .text-black-50 {
   --bs-text-opacity: 1;
@@ -10831,9 +10961,11 @@ p {
 .page-section {
   padding: 6rem 0;
 }
-
-#products-section h2 {
+#products-section h1 {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+
 }
 .about-section{
   padding: 6rem 0;
@@ -10850,6 +10982,7 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -10904,7 +11037,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #000;
+  color: #e0e6e9;
 }
 
 @media (min-width: 992px) {
@@ -10957,19 +11090,20 @@ header.masthead {
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   color: #f3fadc;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
-  font-weight: 700;
   line-height: 3.25rem;
   color: #f3fadc;
   margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 
 @media (min-width: 768px) {
@@ -10990,33 +11124,31 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-
-
 #products .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: #000;
 }
 #products .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
+
 #products .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(129, 169, 105, 0.5); /* Slightly transparent #81A969 */
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
 #products .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25rem;
-  color: #81A969;
+  font-size: 2.25rem;
+  color: #f3fadc;
 }
 #products .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
@@ -11028,13 +11160,15 @@ header.masthead .masthead-heading {
 }
 #products .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   margin-bottom: 0;
 }
 #products .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .portfolio-modal .modal-dialog {
@@ -11045,6 +11179,9 @@ header.masthead .masthead-heading {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
@@ -11078,14 +11215,9 @@ header.masthead .masthead-heading {
 }
 
 #products-section {
-  background-color: #819171; /* Light background color */
-  padding: 30px 0; /* Adds padding to the section */
+  background-color: #c8e6c9; /* Light background color */
+  padding: 6rem 0; /* Adds padding to the section */
 }
-
-#carouselExampleDark {
-  background-color: #81A969; /* Optional: You can also style the carousel background itself */
-}
-
 
 .timeline {
   position: relative;
@@ -11175,6 +11307,8 @@ header.masthead .masthead-heading {
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
   color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
@@ -11182,6 +11316,10 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: justify;
 }
 .timeline-custom-color {
   background-color: #81A969;
@@ -11285,9 +11423,11 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #8ddbaa;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 section#contact .section-heading {
   color: #f2e8c2;
